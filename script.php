@@ -1,7 +1,7 @@
 <?php 
 $paragraph = ($_POST["paragraph"]);
 $stringLength = strlen($paragraph);
-$badWord = ($_POST["badword"]);
+$badWord = trim($_POST["badword"]);
 $replacedParagraph = str_replace($badWord, "***", $paragraph);
 
 /* echo 'The paragraph is ', $stringLength, ' characters long<br>';
@@ -27,11 +27,15 @@ echo $replacedParagraph;
     <div class="container d-flex justify-content-center">
         <div class="card rounded-0 col-8 shadow">
             <div class="card-body">
-                <p>The paragraph is <?php $stringLength; ?> characters long</p>
+                <p>Your paragraph is <?php echo $stringLength; ?> characters long</p>
                 <div class="paragraph">
-                    <p> <?php $paragraph; ?> </p>
+                    <h4>Your paragraph:</h4>
+                    <p><?php echo $paragraph; ?></p>
                 </div>
-                <div class="replaced"> <?php $replacedParagraph; ?> </div>
+                <div class="replaced">
+                    <h4>Your paragraph without bad word:</h4>
+                    <p><?php echo $replacedParagraph; ?></p> 
+                </div>
             </div>
         </div>
     </div>
