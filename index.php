@@ -38,6 +38,7 @@ stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
                         <label for="badword" class="form-label">Type the bad word</label>
                         <input type="text" class="form-control" name="badword" id="badword">
                     </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
                 </form>
             </div>
         </div>
