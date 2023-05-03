@@ -29,14 +29,16 @@ stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
     <div class="container d-flex justify-content-center">
         <div class="card rounded-0 col-8 shadow">
             <div class="card-body">
-                <div class="mb-3">
-                    <label for="paragraph" class="form-label">Type your paragraph</label>
-                    <textarea class="form-control" name="paragraph" id="paragraph" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="badword" class="form-label">Type the bad word</label>
-                    <input type="text" class="form-control" name="badword" id="badword">
-                </div>
+                <form action="script.php" method="post">
+                    <div class="mb-3">
+                        <label for="paragraph" class="form-label">Type your paragraph</label>
+                        <textarea class="form-control" name="paragraph" id="paragraph" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="badword" class="form-label">Type the bad word</label>
+                        <input type="text" class="form-control" name="badword" id="badword">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
